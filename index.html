@@ -14,8 +14,9 @@
     <hr>
 
     <div id="ankurdes">
-        <h2>Ankur</h2>
+        <h2 id="title">Ankur</h2>
     <p>Hello, This is Ankur.I'm from Etawah,UP.</p>
+    <button onclick="change()">sumbit</button>
     <p>I am currently persuing electrical engineering from IIT (BHU) Varanasi.</p>
     <button onclick="changecolor()">sumbit</button>
     </div>
@@ -58,6 +59,10 @@
 
        var para=document.getElementById("ankurdes");
        para.addEventListener("click",changecolor);
+       function change(){
+          let a=document.getElementById("title");
+          a.style.color="red";
+       }
     </script>
 </body>
 </html>
