@@ -30,6 +30,9 @@
             background-color: aqua;
             color:grey;
             text-align: center;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin: 20px;
         }
         .ankurdes{
             text-align: center;
@@ -45,14 +48,11 @@
         {
             var para=document.getElementById("ankurdes");
             para.classList.add("addcolor");
+            para.classList.add("shadow p-3 mb-5 bg-white rounded");
             ison=true;
+           
         }
-        else
-        {
-            var para=document.getElementById("ankurdes");
-            para.classList.remove("addcolor");
-            ison=false;
-        }
+        
 
        }
 
