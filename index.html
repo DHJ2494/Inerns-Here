@@ -14,7 +14,8 @@
     <hr>
 
     <div id="ankurdes">
-        <h2>Ankur</h2>
+        <h2 id="title">Ankur</h2>
+        <button onclick="myfun()">Cick Me</button>
     <p>Hello, This is Ankur.I'm from Etawah,UP.</p>
     <p>I am currently persuing electrical engineering from IIT (BHU) Varanasi.</p>
     <button onclick="changecolor()">sumbit</button>
@@ -38,9 +39,7 @@
             text-align: center;
         }
     </style>
-
     <script>
-
         let ison=false;
        function changecolor()
        {
@@ -52,12 +51,13 @@
             ison=true;
            
         }
-        
-
        }
-
        var para=document.getElementById("ankurdes");
        para.addEventListener("click",changecolor);
+       function myfun(){
+           let a=document.getElementById("title");
+           a.style.color='red';
+       }
     </script>
 </body>
 </html>
