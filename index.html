@@ -6,59 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- STYLE AND SCRIPTS MOSTLY GO IN HEAD  -->
+    <style></style>
+    <script></script>
+
 </head>
 <body>
     <h1>Kritikal Internee</h1>
-    <hr>
-    <hr>
 
-    <div id="ankurdes">
-        <h2 id="title">Ankur</h2>
-        <button onclick="myfun()">Cick Me</button>
-    <p>Hello, This is Ankur.I'm from Etawah,UP.</p>
-    <p>I am currently persuing electrical engineering from IIT (BHU) Varanasi.</p>
-    <p>Hii</p>
-    <button onclick="changecolor()">sumbit</button>
+    <div class="container">
+        <div class="row">
+            <h1>Welcome</h1>
+        </div>
+        <div class="row">
+            <!-- HARISH -->
+            <p></p>
+            <!-- ANKUR -->
+            <p></p>
+        </div>
+        <div class="row">
+            <button onclick="myfun()">Ankur's Button</button>
+            <button onclick="changecolor()">Harish's Button</button>    
+        </div>
     </div>
-    <style>
-        h1{
-            
-            text-align: center;
-            color: aqua;
-        }
-
-        .addcolor{
-            background-color: aqua;
-            color:grey;
-            text-align: center;
-            box-sizing: border-box;
-            border-radius: 5px;
-            margin: 20px;
-        }
-        .ankurdes{
-            text-align: center;
-        }
-    </style>
-    <script>
-        let ison=false;
-       function changecolor()
-       {
-           if(!ison)
-        {
-            var para=document.getElementById("ankurdes");
-            para.classList.add("addcolor");
-            para.classList.add("shadow p-3 mb-5 bg-white rounded");
-            ison=true;
-           
-        }
-       }
-       var para=document.getElementById("ankurdes");
-       para.addEventListener("click",changecolor);
-       function myfun(){
-           let a=document.getElementById("title");
-           a.style.color='red';
-       }
-    </script>
 </body>
 </html>
