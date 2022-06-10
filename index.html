@@ -14,35 +14,78 @@
 
 </head>
 <body>
-    <h1>Kritikal Internee</h1>
+<h1>Kritikal Internee</h1>
 
-    <div class="container">
-        <div class="row">
-            <h1>Welcome</h1>
-        </div>
-        <div class="row">
-            <!-- HARISH -->
-            <div class="box">
-               <h3 id="title">Harish Kumar Ostwal</h3>
-               <p>My Name is Harish Kumar Ostwal.I am pursuing EEE in IIT BHU in prefinal year.</p>   
-            </div>
-            <p></p>
-            <!-- ANKUR -->
-            <p></p>
-            <!-- VINAY -->
-            <p></p>
-        </div>
-        <div class="row">
-            <button>Ankur's Button</button>
-            <button onclick="changec()">Harish's Button</button>
-            <button>Vinya's Button</button>    
-        </div>
+<div class="container">
+    <div class="row">
+        <h1>Welcome</h1>
     </div>
+    <div class="row">
+        <!-- HARISH -->
+        <div class="box">
+            <h3 id="title">Harish Kumar Ostwal</h3>
+            <p>My Name is Harish Kumar Ostwal.I am pursuing EEE in IIT BHU in prefinal year.</p>
+        </div>
+        <p></p>
+        <!-- ANKUR -->
+        <div id="ankurdes">
+            <h2 class="hankur">Ankur</h2>
+            <p>Hello, This is Ankur.I'm from Etawah,UP.I am currently persuing electrical eng. from IIT (BHU) Varanasi. And resing here</p>
+        </div>
+        <!-- VINAY -->
+        <p></p>
+    </div>
+    <div class="row">
+        <button onclick="changecolor()">Ankur's Button</button>
+        <button onclick="changec()">Harish's Button</button>
+        <button>Vinya's Button</button>
+    </div> <!-- 1 -->
+
+    <style>
+        /* ANKUR */
+        .hankur{
+            text-align: center;
+            color: rgb(0, 0, 0);
+            background-color: blueviolet;
+        }
+
+        .addcolor{
+            background-color: aqua;
+            color:grey;
+            text-align: center;
+        }
+        .ankurdes{
+            text-align: center;
+        }
+        .ncolor{
+            background-color: white;
+        }
+
+    </style>
     <script>
+        // ANKUR
+        var ison=false;
+        var para=document.getElementById("ankurdes");
+        function changecolor()
+        {
+
+            if(ison===false)
+            {
+                para.classList.add("addcolor");
+                ison=true;
+            }
+            else{
+                para.classList.remove("addcolor");
+                para.classList.add("hankur");
+                ison=false;
+            }
+        }
+
         function changec(){
             let a=document.getElementById("title");
             a.style.color="red";
         }
     </script>
+</div>
 </body>
 </html>
